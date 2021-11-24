@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <!-- cabecera logo + nav --> 
+    <header>
+        <nav>
+            <img src="../images/logo.svg" alt="Logo">
+            <ul>
+                <a href="../index.html"><li class="button-header">Inicio</li></a>
+                <a href="componentes.html"><li class="button-header">Componentes</li></a>
+                <a href="patrones.html"><li class="button-header">Patrones</li></a>
+                <a href="recursos.html"><li class="button-header">Recursos</li></a>
+                <a href="contacto.html"><li class="button-header">Contacto</li></a>
+            </ul>
+        </nav>
+    </header>
+    <!-- inicio cuerpo -->
+    <section class="hero__pages">
+        <div>
+            <h2>Contáctanos</h2>
+            <p class="texto-gris">Los patrones son combinaciones reutilizables de componentes que resuelven problemas <br> comunes de los usuarios. Estas soluciones de mejores prácticas ayudan a los usuarios a alcanzar <br> sus objetivos y ayudan a garantizar la coherencia entre las experiencias. </p>
+        </div>
+        <img src="../images/placeholder.svg">
+    </section>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="correo">Correo electronico</label><br>
+        <input type="text" id="correo" name="correo"><br>
+
+        <label for="pais">País</label><br>
+        <select name="pais">
+            <option value="colombia">Colombia</option>
+            <option value="chile">Chile</option>
+            <option value="brasil">Brasil</option>
+        </select><br>
+
+        <label for="mensaje">Mensaje</label><br>
+		<textarea id="mensaje" name="mensaje"></textarea><br>
+
+        <div>Acepta términos y condiciones</div>
+        <input type="checkbox" name="acepta" value="1"/><br>
+
+        <input class="button-primary" type="submit" value="Enviar">
+    </form>
+    <!-- inicio de footer --> 
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+    </footer>
+</body>
+</html>
