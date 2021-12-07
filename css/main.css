@@ -97,6 +97,7 @@ h2 {
     display:inline-block;
 }
 
+
 .button-primary {
     width: 100px;
     height: 42px;
@@ -107,6 +108,12 @@ h2 {
     border-radius: 100px;
 }
 
+.button-primary:hover {
+    transform: scale(108%,108%);
+    transition: 1s;
+    font-size: 1rem;
+  }
+
 footer{
     margin-top: 62px;
     padding: 20px;
@@ -116,6 +123,19 @@ footer{
     top: 20px;
 }
 
+.logo-header {
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
 
 @media only screen and (min-width: 1024px) {
     .container {
@@ -196,6 +216,7 @@ footer{
 
     .hero__image{
         width: 90%;
+        animation-name: aparecer;
     }
 
 
