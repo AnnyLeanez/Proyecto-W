@@ -1,15 +1,15 @@
 body{
 	font-family: 'Open Sans';
-    display: flex;
     margin: 0%;
-    flex-direction: column;
 }
 
-header{
-	text-align: left;
-    position: static;
-    background-color: #061E38;
-    width: 100%;
+.menu{
+    display: flex;
+    padding: 10px;
+    padding-left: 140px;
+    padding-right: 200px;
+    margin-bottom:10px;
+    background-color: #061E38 ;
 }
 
 .button-header {
@@ -47,26 +47,23 @@ h2 {
 } 
 
 .hero {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-items: center;
+    align-items: center;
     background-color: #fafafa;
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding: 150px;
 }
 
 .hero__pages {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-items: center;
+    align-items: center;
     background-color: #fafafa;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 100px;
 }
 
-.container {
-    margin: 48px  150px 48px 150px;
-    background-color: white;
-    display: flex;
-}
 
 .card__pages {
     margin: 5px;
@@ -77,7 +74,15 @@ h2 {
 
 }
 
-.center{
+.grid-container {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 100px;
+    justify-content: center;
+ }
+
+ .center{
     text-align: center;
     padding-top: 50px;
 }
@@ -103,9 +108,107 @@ h2 {
 }
 
 footer{
-    margin-top: 50px;
-	background-color: #061E38;
+    margin-top: 62px;
+    padding: 20px;
+    background-color: #061E38;
     color: white;
     text-align: center;
     top: 20px;
 }
+
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-row-gap: 16px;
+        grid-template-columns: repeat(4,4fr);
+        grid-column-gap: 16px;
+        padding: 100px;
+        justify-content: center;
+    }
+    .container__card {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: solid;
+        border-color: whitesmoke;
+        border-radius: 15px;
+        padding: 25px;
+
+    }
+
+ }
+
+ @media only screen and (max-width: 480px) {
+
+    .menu{
+        display: flex;
+        padding: 10px;
+        background-color: #061E38 ;
+    }
+
+    .button-header {
+        display: inline-block;
+        padding-right: 10px;
+        position:relative;
+        font-size: 16px;
+        color: white;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    .container__card {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: solid;
+        border-color: whitesmoke;
+        border-radius: 16px;
+        padding: 24px;
+        margin-bottom: 16px;
+    }
+    
+
+    .hero__pages {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #fafafa;
+        padding: 10px;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #fafafa;
+        padding: 10px;
+    }
+
+    .card {
+        text-align: left;
+        background-color: #fafafa;
+        border-radius: 20px;
+        width: 250px;
+        padding: 24px;
+        margin: 16px;
+        display:inline-block;
+    }
+
+    .hero__image{
+        width: 90%;
+    }
+
+
+    h1 {
+        font-size: 60px;
+        letter-spacing: -5px;
+        line-height: 60px;
+        color: rgb(0, 0, 0);
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color:rgb(0, 0, 0);
+    } 
+
+ }
+ 
+
