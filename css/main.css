@@ -169,6 +169,13 @@ footer{
     background-color: #1F344C;
 }
 
+.input-form {
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 20px;
+    height: 48px;
+}
+
 @media only screen and (min-width: 1024px) {
     .box {
         display: grid;
