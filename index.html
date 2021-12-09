@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Inicio</title>
@@ -11,51 +12,71 @@
 <body>
     <!-- cabecera logo + nav --> 
     <header>
-        <div class="menu">
-            <img class="logo-header" src="./images/logo.svg" alt="Logo">
-            <nav>
-                <ul>
-                    <a href="index.html"><li class="button-header">Inicio</li></a>
-                    <a href="pages/componentes.html"><li class="button-header">Componentes</li></a>
-                    <a href="pages/patrones.html"><li class="button-header">Patrones</li></a>
-                    <a href="pages/recursos.html"><li class="button-header">Recursos</li></a>
-                    <a href="pages/contacto.html"><li class="button-header">Contacto</li></a>
+            <nav class="navbar navbar-expand-lg">
+                <img class="logo-header" src="./images/logo.svg" alt="Logo">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item button-header">
+                        <a class="button-color nav-link" href="index.html"> Inicio</a>
+                    </li>
+                    <li class="nav-item button-header">
+                        <a class="button-color nav-link" href="pages/componentes.html"> Componentes</a>
+                    </li>
+                    <li class="nav-item button-header">
+                        <a class="button-color nav-link" href="pages/patrones.html"> Patrones</a>
+                    </li>
+                    <li class="nav-item button-header">
+                        <a class="button-color nav-link" href="pages/recursos.html"> Recursos</a>
+                    </li>
+                    <li class="nav-item button-header">
+                        <a class="button-color nav-link" href="pages/contacto.html"> Contacto</a>
+                    </li>
+                    <form class="form-inline">
+                        <input class="input-buscador" type="search" placeholder="Buscar" aria-label="Search">
+                    </form>
                 </ul>
             </nav>
-        </div>
     </header>
     <!-- inicio cuerpo --> 
-    <section class="hero">
-        <div>
-            <h1>Sistema de <br> diseño Wolf</h1>
-            <p class="texto-gris">Información detallada y recursos de interfaz de usuario para diseñar aplicaciones <br> que se integran a la perfección con Wolf.</p>
+    <section class="container col-xxl-8 py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1>Sistema de <br> diseño Wolf</h1>
+            <p class="texto-gris">Información detallada y recursos de interfaz de usuario para diseñar aplicaciones que se integran a la perfección con Wolf.</p>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img class="hero__image" src="./images/img-hero.svg">
+            </div>   
         </div>
-        <img class="hero__image" src="./images/img-hero.svg">
-    </section class="box">
+    </section class="container center">
         <section class="center">
             <h2>Una colección de herramientas, kits, <br> complementos y guías</h2>
             <p class="texto-gris">para ayudar a simplificar el proceso de creación para nuestros usuarios.</p>
         </section>
-        <section class="center">
-            <article class="card">
-                <h3>Componentes</h3>
-                <p class="texto-gris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                <button type="button" class="button-primary">Ver más</button>
-             </article>
-            <article class="card">
-                <h3>Patrones</h3>
-                <p class="texto-gris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                <button type="button" class="button-primary">Ver más</button>
-            </article>
-            <article class="card">
-                <h3>Recursos</h3>
-                <p class="texto-gris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                <button type="button" class="button-primary">Ver más</button>
-            </article>
+        <section class="container py-5">
+            <div class="row">
+                <article class="col-lg-4 cards">
+                    <h3>Componentes</h3>
+                    <p class="texto-gris">Las bibliotecas de componentes brindan a los desarrolladores una colección de componentes reutilizables para crear interfaces de usuario.</p>
+                    <button type="button" class="button-primary">Ver más</button>
+                 </article>
+                <article class="col-lg-4 cards">
+                    <h3>Patrones</h3>
+                    <p class="texto-gris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <button type="button" class="button-primary">Ver más</button>
+                </article>
+                <article class="col-lg-4 cards">
+                    <h3>Recursos</h3>
+                    <p class="texto-gris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <button type="button" class="button-primary">Ver más</button>
+                </article>
+            </div>
         </section>
         <!-- inicio de footer --> 
-    <footer>
+    <footer class="container-fluid">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+

@@ -1,23 +1,33 @@
 body{
 	font-family: 'Open Sans';
     margin: 0%;
+    display: flex;
+    flex-direction: column;
 }
 
-.menu{
-    display: flex;
+header{
+    overflow:hidden;
+	text-align: left;
+    flex-direction: row;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
     padding: 10px;
-    padding-left: 140px;
+    padding-left: 200px;
     padding-right: 200px;
     margin-bottom:10px;
-    background-color: #061E38 ;
+    background-color: #061E38;
 }
 
 .button-header {
-	display: inline-block;
 	padding-right: 90px;
 	position:relative;
 	font-size: 15px;
+    text-decoration: none;
 	color: white;
+}
+
+.button-color {
+    color: white;
+    text-decoration: none;
 }
 
 ul {
@@ -31,6 +41,7 @@ ul {
 
 h1 {
     font-size: 90px;
+    font-weight: 700;
     letter-spacing: -5px;
     line-height: 80px;
     color: rgb(0, 0, 0);
@@ -40,7 +51,15 @@ h1 {
 } 
 
 h2 {
-    font-size: 38px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color:rgb(0, 0, 0);
+} 
+
+h3 {
+    font-size: 32px;
     line-height: 40px;
     letter-spacing: -2px;
     color:rgb(0, 0, 0);
@@ -87,7 +106,7 @@ h2 {
     padding-top: 50px;
 }
 
-.card {
+.cards {
     text-align: left;
     background-color: #fafafa;
     border-radius: 20px;
@@ -124,6 +143,7 @@ footer{
 }
 
 .logo-header {
+    padding: 10px 40px 10px 10px;
     animation-duration: 3s;
     animation-name: aparecer;
     animation-iteration-count:initial;
@@ -136,6 +156,18 @@ footer{
       opacity: 1;
     }
  }
+
+.input-buscador {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 1.5;
+    display: block;
+    border-radius: .90rem;
+    background-clip: padding-box;
+    border: none;
+    background-color: #1F344C;
+}
 
 @media only screen and (min-width: 1024px) {
     .box {
