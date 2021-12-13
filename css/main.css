@@ -12,15 +12,15 @@ header{
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
     padding: 10px;
     padding-left: 200px;
-    padding-right: 200px;
+    padding-right: 300px;
     margin-bottom:10px;
     background-color: #061E38;
 }
 
 .button-header {
-	padding-right: 90px;
+	padding-right: 50px;
 	position:relative;
-	font-size: 15px;
+	font-size: 14px;
     text-decoration: none;
 	color: white;
 }
@@ -108,12 +108,22 @@ h3 {
 
 .cards {
     text-align: left;
-    background-color: #fafafa;
-    border-radius: 20px;
-    width: 400px;
-    padding: 50px;
-    margin: 10px;
-    display:inline-block;
+    background-color: #ffffff;
+    border-radius: 24px;
+    width: 310px;
+    padding: 24px;
+    margin: 8px;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
+}
+
+.cards__home {
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 24px;
+    width: 420px;
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -174,6 +184,10 @@ footer{
     border: none;
     border-radius: 20px;
     height: 48px;
+}
+
+.card-section {
+    width: 100%;
 }
 
 @media only screen and (min-width: 1024px) {
