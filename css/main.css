@@ -36,7 +36,8 @@ ul {
 
 
 .texto-gris {
-    color: grey;
+    color: #666666;
+    
 }
 
 h1 {
@@ -51,19 +52,28 @@ h1 {
 } 
 
 h2 {
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 56px;
+    font-weight: 700;
     line-height: 48px;
     letter-spacing: -2px;
     color:rgb(0, 0, 0);
 } 
 
 h3 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
-    letter-spacing: -2px;
+    letter-spacing: -1.5px;
     color:rgb(0, 0, 0);
 } 
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color:rgb(0, 0, 0);
+} 
+
 
 .hero {
     display: grid;
@@ -103,7 +113,7 @@ h3 {
 
  .center{
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .cards {
@@ -115,6 +125,12 @@ h3 {
     margin: 8px;
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
 }
+
+.cards:hover {
+    transform: scale(106%,106%);
+    transition: 1s;
+    font-size: 1rem;
+  }
 
 .cards__home {
     text-align: left;
@@ -153,7 +169,7 @@ footer{
 }
 
 .logo-header {
-    padding: 10px 40px 10px 10px;
+    padding: 10px 40px 10px 90px;
     animation-duration: 3s;
     animation-name: aparecer;
     animation-iteration-count:initial;
